@@ -3,6 +3,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@models/*": ["./src/app/models/*"],
+      "@components/*": ["./src/app/components/*"],
+    },
     "rootDir": "./src",
     "outDir": "./dist/out-tsc",
     "strict": true,

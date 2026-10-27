@@ -24,20 +24,21 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>Arroz</td>
-        <td>
-          <input class="form-check-input" type="checkbox" />
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Maça</td>
-        <td>
-          <input class="form-check-input" type="checkbox" />
-        </td>
-      </tr>
+      @for(item of lista; track item.id) {
+        <tr>
+          <td>{{item.id}}</td>
+          <td>
+            <span [ngClass]="{'item-riscado': item.comprado}"> {{item.nome}} </span>
+          </td>
+          <td>
+            <input class="form-check-input" type="checkbox" [checked]="item.comprado" (click)="riscarItem(item)" />
+          </td>
+        </tr>
+      } @empty {
+        <tr>
+          <td colspan="3" class="text-center">Nenhum item na lista.</td>
+        </tr>
+      }
     </tbody>
   </table>
 </div>
