@@ -1,0 +1,94 @@
+/* Centralização e card principal */
+.calculator-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+/* Título */
+.calculator-container h2 {
+  color: #0d6efd; /* Azul do Bootstrap */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Campos de formulário */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Efeito de foco no input (estilo Bootstrap) */
+.form-group input:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Botão principal */
+.calculator-container button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.calculator-container button:hover {
+  background-color: #0b5ed7;
+}
+
+.calculator-container button:active {
+  transform: scale(0.98);
+}
+
+.calculator-container button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* Área de Resultado */
+.resultado {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #0d6efd;
+  border-radius: 4px;
+}
+
+.resultado h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #212529;
+  font-weight: 600;
+}

@@ -1,0 +1,30 @@
+<div class="calculator-container">
+
+  <h2>Calculadora Angular</h2>
+
+  <!-- Formulário Reativo usando [formGroup] -->
+  <form #calculatorForm="ngForm" (ngSubmit)="somar()">
+    <!-- Campo para o Número 1 -->
+    <div class="form-group">
+      <label for="num1">Número 1:</label>
+      <input id="numero1" type="number" name="numero1" placeholder="Digite o primeiro número" [(ngModel)]="numero1"/>
+    </div>
+
+    <!-- Campo para o Número 2 -->
+    <div class="form-group">
+      <label for="num2">Número 2:</label>
+      <input id="numero2" type="number" name="numero2" placeholder="Digite o segundo número" [(ngModel)]="numero2"/>
+    </div>
+    
+    <!-- Botão de Envio -->
+    <button type="submit">Somar</button>
+  </form>
+
+  <!-- Exibição do Resultado -->
+  @if (resultado) {
+    <div class="resultado">
+      <h3>Resultado:  {{ resultado }}</h3>
+    </div>
+  }
+    
+</div> 

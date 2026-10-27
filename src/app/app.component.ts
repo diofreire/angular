@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ListaComprasComponent } from './lista-compras/lista-compras.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ListaComprasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'conceitos-basicos';
+
+  adicionarItem(item: string) {
+    console.log('Item adicionado:', item);
+  }
+
+  
 }

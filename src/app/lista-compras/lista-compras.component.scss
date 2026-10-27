@@ -1,0 +1,167 @@
+/* Customização baseada nas classes de tabela do Bootstrap */
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: middle;
+  border-color: #dee2e6;
+}
+
+/* Estilização do Cabeçalho da Tabela */
+.table thead th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #dee2e6;
+  padding: 0.75rem 1rem;
+}
+
+/* Estilo das Células */
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Efeito de Hover nas linhas (estilo .table-hover do Bootstrap) */
+.table tbody tr {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.04);
+}
+
+/* Estilo para itens já marcados/concluídos (.table-light / item comprado) */
+.table tbody tr.item-concluido {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.table tbody tr.item-concluido td {
+  text-decoration: line-through;
+}
+
+/* Checkbox estilizado estilo Bootstrap (.form-check-input) */
+.form-check-input {
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: 0;
+  cursor: pointer;
+  border-radius: 0.25em;
+  border: 1px solid #ced4da;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.form-check-input:checked {
+  background-color: #198754; /* Cor de sucesso (verde) */
+  border-color: #198754;
+}
+
+.form-check-input:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Ajuste nos botões de ação */
+.btn-outline-danger {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+}
+
+/* Container principal estilo Card limpo com sombra suave */
+.shopping-card {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+/* Título Serifado estilo a imagem */
+.shopping-card h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 1.25rem;
+  font-size: 1.8rem;
+}
+
+/* Estilização do Input de Texto */
+.input-custom {
+  border: 1.5px solid #007bff;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.input-custom::placeholder {
+  color: #8c8c8c;
+}
+
+.input-custom:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Botão Adicionar */
+.btn-blue {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+/* Tabela com Bordas e Cabeçalho Azul */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+  margin-top: 1rem;
+}
+
+/* Cabeçalho da Tabela */
+.custom-table thead th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 1.05rem;
+  text-align: center;
+  padding: 0.6rem;
+  border: 1px solid #0069d9;
+}
+
+/* Linhas e Células */
+.custom-table tbody td {
+  text-align: center;
+  padding: 0.6rem;
+  border: 1px solid #e0e0e0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.05rem;
+  color: #212529;
+}
+
+/* Checkbox centralizado */
+.custom-table .form-check-input {
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+  border: 1px solid #adb5bd;
+}

@@ -1,0 +1,43 @@
+<div class="shopping-card">
+  <h2>Lista de Compras</h2>
+
+  <!-- Input e Botão -->
+  <form #formularioItem="ngForm" class="d-flex gap-2 mb-3" (ngSubmit)="adicionarItem()">
+    <input 
+      type="text" 
+      class="form-control input-custom" 
+      placeholder="Digite o nome do item"
+      name="item"
+      id="item"
+      [(ngModel)]="item"
+    />
+    <button type="submit" class="btn btn-blue">Adicionar</button>
+  </form>
+
+  <!-- Tabela estilo Imagem -->
+  <table class="table custom-table m-0">
+    <thead>
+      <tr>
+        <th style="width: 25%;">#</th>
+        <th style="width: 50%;">Item</th>
+        <th style="width: 25%;"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Arroz</td>
+        <td>
+          <input class="form-check-input" type="checkbox" />
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Maça</td>
+        <td>
+          <input class="form-check-input" type="checkbox" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
