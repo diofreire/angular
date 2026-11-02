@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ItemLista } from '@models/itemLista.model';
+import { ItemLista } from '@models/item-lista.model';
 import { CommonModule } from '@angular/common';
 
 

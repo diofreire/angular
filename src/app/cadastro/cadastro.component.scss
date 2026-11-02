@@ -1,0 +1,46 @@
+/* Classes utilitárias usadas no seu HTML */
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+/* Ocupa 100% do container pai (div com fxFlex) */
+.full-width {
+  width: 100%;
+}
+
+/* Estilização do Card */
+mat-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  padding: 16px;
+}
+
+mat-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Ajuste das ações (Botões no rodapé do Card) */
+mat-card-actions {
+  display: flex;
+  gap: 10px;
+  padding: 16px 0 0 0;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 16px;
+
+  /* Espaçamento entre os ícones e os textos dos botões */
+  button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+}

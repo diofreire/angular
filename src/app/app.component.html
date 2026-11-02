@@ -1,1 +1,16 @@
-<app-lista-compras></app-lista-compras>
+<mat-toolbar color="primary">
+  <span class="fw-bold">Cadastro de Clientes</span>
+  
+  <!-- Espaçador flexível para empurrar o menu para a direita -->
+  <span class="spacer"></span>
+
+  <a routerLink="/cadastro">
+    <mat-icon fontIcon="feed"></mat-icon>
+    Formulário
+  </a>
+  <a routerLink="/consulta">
+    <mat-icon fontIcon="search"></mat-icon>
+    Consulta
+  </a>
+</mat-toolbar>
+<router-outlet></router-outlet>
