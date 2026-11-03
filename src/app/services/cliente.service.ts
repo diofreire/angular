@@ -35,4 +35,16 @@ export class ClienteService {
     localStorage.setItem(ClienteService.REPO_CLIENTES, JSON.stringify(clientes));
     return clientes;
   }
+
+  pesquisarClientes(nomeBusca: string) : Cliente[] {
+
+    const clientes = this.getStorage();
+
+    if(!nomeBusca){
+      return clientes;
+    }
+
+    // Filtra os clientes que possuem o nome informado na busca
+    return clientes.filter(cliente => cliente.nome?.indexOf(nomeBusca) !== -1)
+  }
 }
